@@ -13,4 +13,5 @@ Stretch goal, toggle between fortune teller and eight ball; fortune cookie?
 Stretch goal, shake the phone
 Stretch goal, create app
 Scroll fast to shake
-  
+
+
