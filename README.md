@@ -13,8 +13,7 @@ Our object (for the MVP) is the eight ball / image, the main element of user int
 * Array of user answers
 
 **Methods**
-* Generate random answer 
-* Generate random user answer
+* Generate random answer / Generate random user answer
 * Generate new interface, e.g., fortune teller (stretch goal)
 * Save user answers in user storage
 * Clear user answers on demand
@@ -35,6 +34,7 @@ Our object (for the MVP) is the eight ball / image, the main element of user int
 
 ## Stretch Goals
 * Customize / toggle interface: eight ball, fortune teller, other
+* Customize ball color
 * Intake with user name, customize response
 * Create phone app with ability to shake phone to roll
 
