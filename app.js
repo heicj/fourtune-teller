@@ -22,13 +22,12 @@ FortuneTell.prototype.randomAnswer = function(){
     }
 };
 
-FortuneTell.prototype.clear = function(){
-    const clear = document.getElementById('clearButton');
-    clear.addEventListener('click', function(e){
-        e.preventDefault();
-        userAnswers.length = 0;
-    });
-};
+const clear = document.getElementById('clearButton');
+clear.addEventListener('click', function(e){
+    e.preventDefault();
+    userAnswers.length = 0;
+});
+
 
 //event handler to add user input as possible answers
 const form = document.getElementById('userInput');
