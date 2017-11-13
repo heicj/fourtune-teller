@@ -8,11 +8,35 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <!--nav to about us-->
-    <!--question box-->
-    <!--image-->
-    <!--answer display-->
-    <!--link to customize page-->
+    <div id="nav">
+        <p>Logo Image</p>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="custom.html">Customize</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="main">
+        <p>Enter your yes / no question and click on the eight ball to see your future.</p>
+        <form action="app.js">
+            <input type="text" name="question" value="Enter your yes / no question here" size="100"/>
+        </form>
+        <div id="eight-ball">
+            <img src="./images/8-ball.jpg" alt="magic 8 ball"/><p>image here (animation on click)</p>
+            <p>text answer (animation TBD)</p>
+        </div>
+        <button><a href="custom.html">Customize Your Future</a></button>
+    </div>    
+    <footer>
+        <p>Disclaimer</p>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="custom.html">Customize</a></li>
+            </ul>
+        </nav>
+    </footer>
   <script src="app.js"></script>
 </body>
 </html>
