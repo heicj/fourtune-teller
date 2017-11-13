@@ -19,12 +19,12 @@ function randomAnswer(){
     }
 }
 
-const eightball = document.getElementById('eightBallImage');
-eightBallImage.addEventListener('click', clickHandler);
+const eightball = document.getElementById('eightBallImage'); // target HTML element with event listener
+eightBallImage.addEventListener('click', clickHandler); // click handler is a function; event listener takes click handler function as a parameter
 
 function clickHandler() {
 
-    const answer = document.getElementById('answer');
-    answer.textContent = randomAnswer();
+    const answer = document.getElementById('answer'); // target HTML element to which click handler returns answer
+    answer.textContent = randomAnswer(); // calls randomAnswer function, fills target element with random answer
 }
 
