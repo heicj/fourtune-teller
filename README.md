@@ -40,4 +40,5 @@ Our object (for the MVP) is the eight ball / image, the main element of user int
 
 ## Wireframes
 [Page 1](https://wireframe.cc/d3LQf8)
+
 [Page 2](https://wireframe.cc/hnq5FE)
