@@ -1,5 +1,6 @@
 'use strict';
 const answersArray = ['yes', 'no', 'absolutely', 'possibly', 'highly unlikly', 'who knows'];
+const userAnswers = [];
 
 function fortuneTell (name){
     this.name = name;
@@ -17,3 +18,13 @@ function randomAnswer(){
         return ans;
     }
 }
+
+const eightball = document.getElementById('eightBallImage');
+eightBallImage.addEventListener('click', clickHandler);
+
+function clickHandler() {
+
+    const answer = document.getElementById('answer');
+    answer.textContent = randomAnswer();
+}
+
