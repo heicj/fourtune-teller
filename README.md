@@ -37,3 +37,7 @@ Our object (for the MVP) is the eight ball / image, the main element of user int
 * Customize / toggle interface: eight ball, fortune teller, other
 * Intake with user name, customize response
 * Create phone app with ability to shake phone to roll
+
+## Wireframes
+[Page 1] (https://wireframe.cc/d3LQf8)
+[Page 2] (https://wireframe.cc/hnq5FE)
