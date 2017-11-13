@@ -33,9 +33,10 @@ Our object (for the MVP) is the eight ball / image, the main element of user int
 * Store and randomly generate up to ten user responses 
 
 ## Stretch Goals
-* Customize / toggle interface: eight ball, fortune teller, other
-* Customize ball color
+* Change ball color on roll
+* Customize ball color (user select)
 * Intake with user name, customize response
+* Customize / toggle interface: eight ball, fortune teller, other
 * Create phone app with ability to shake phone to roll
 
 ## Wireframes
