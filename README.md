@@ -39,5 +39,5 @@ Our object (for the MVP) is the eight ball / image, the main element of user int
 * Create phone app with ability to shake phone to roll
 
 ## Wireframes
-[Page 1] (https://wireframe.cc/d3LQf8)
-[Page 2] (https://wireframe.cc/hnq5FE)
+[Page 1](https://wireframe.cc/d3LQf8)
+[Page 2](https://wireframe.cc/hnq5FE)
