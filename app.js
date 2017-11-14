@@ -10,6 +10,13 @@ function FortuneTell (name){
     this.userAnswers = userAnswers;
 }
 
+if(localStorage.userAnswers){
+    const userArray = JSON.parse(localStorage.userAnswers);
+    for(let i = 0; i < userArray.length; i++){
+        userAnswers.push(userArray[i]);
+    }
+}
+
 FortuneTell.prototype.randomAnswer = function(){
     if(userAnswers.length > 0){
         const userAns = userAnswers[Math.floor(Math.random() * userAnswers.length)];
@@ -18,6 +25,23 @@ FortuneTell.prototype.randomAnswer = function(){
     }else{
         const ans = answersArray[Math.floor(Math.random() * answersArray.length)];
         return ans;
+    }
+};
+
+const form = document.getElementById('userInput');
+if(form) {
+    if(localStorage.userAnswers){
+        for(let i = 0; i < userAnswers.length; i++){
+            const userAnswers = JSON.parse(localStorage.userAnswers);
+            const formAnswers = userAnswers[i];
+            const element = document.getElementById('answer' + (i + 1));
+            if(formAnswers.length !== 0){
+                element.value = formAnswers;
+                element.setAttribute('placeholder', formAnswers);
+            }else{
+                element.setAttribute('placeholder', 'Type Your Answer Here');
+            }
+        }
     }
 };
 
@@ -30,7 +54,6 @@ if(clear) {
 }
 
 //event handler to add user input as possible answers
-const form = document.getElementById('userInput');
 if(form) {
     form.addEventListener('submit', function(e){
         e.preventDefault();
@@ -38,11 +61,14 @@ if(form) {
         for(let i = 1; i < 11; i++){
             const answerOne = document.getElementById('answer' + i).value;
             if (answerOne.length > 0){
-                console.log(answerOne.length);
-                console.log(answerOne);
-                userAnswers.push(answerOne);
+                if (!userAnswers.includes(answerOne)){
+                // localStorage.setItem('answer' + i, JSON.stringify(answerOne));
+                    console.log(answerOne.length);
+                    console.log(answerOne);
+                    userAnswers.push(answerOne);
+                }
             }
-        }
+        } localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
     }, false);
 }
 
