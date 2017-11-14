@@ -10,6 +10,13 @@ function FortuneTell (name){
     this.userAnswers = userAnswers;
 }
 
+if(localStorage.userAnswers){
+    const userArray = JSON.parse(localStorage.userAnswers);
+    for(let i = 0; i < userArray.length; i++){
+        userAnswers.push(userArray[i]);
+    }
+}
+
 FortuneTell.prototype.randomAnswer = function(){
     if(userAnswers.length > 0){
         const userAns = userAnswers[Math.floor(Math.random() * userAnswers.length)];
@@ -22,12 +29,16 @@ FortuneTell.prototype.randomAnswer = function(){
 };
 
 if(localStorage.userAnswers){
-    for(let i = 0; i < 10; i++){
+    for(let i = 0; i < userAnswers.length; i++){
         const userAnswers = JSON.parse(localStorage.userAnswers);
         const formAnswers = userAnswers[i];
-        if(userAnswers[i] !== 'null'){
-            const attribute = document.getElementById('answer' + (i + 1));
-            attribute.setAttribute('placeholder', formAnswers);
+        const element = document.getElementById('answer' + (i + 1));
+        if(userAnswers[i].length > 0){
+            element.value = userAnswers[i];
+            element.setAttribute('placeholder', formAnswers);
+        }else{
+
+            element.setAttribute('placeholder', 'Type Your Answer Here');
         }
 
     }
