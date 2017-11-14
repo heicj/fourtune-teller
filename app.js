@@ -37,7 +37,6 @@ if(form) {
             const element = document.getElementById('answer' + (i + 1));
             if(formAnswers.length !== 0){
                 element.value = formAnswers;
-                element.setAttribute('placeholder', formAnswers);
             }else{
                 element.setAttribute('placeholder', 'Type Your Answer Here');
             }
@@ -50,6 +49,11 @@ if(clear) {
     clear.addEventListener('click', function(e){
         e.preventDefault();
         userAnswers.length = 0;
+        localStorage.clear();
+        for(let i = 1; i < 11; i++){
+            const answer = document.getElementById('answer' + i);
+            answer.value = '';
+        }
     }, false);
 }
 
