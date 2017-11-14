@@ -37,10 +37,8 @@ if(localStorage.userAnswers){
             element.value = userAnswers[i];
             element.setAttribute('placeholder', formAnswers);
         }else{
-
             element.setAttribute('placeholder', 'Type Your Answer Here');
         }
-
     }
 }
 
@@ -62,11 +60,12 @@ if(form) {
         for(let i = 1; i < 11; i++){
             const answerOne = document.getElementById('answer' + i).value;
             if (answerOne.length > 0){
-                
-// localStorage.setItem('answer' + i, JSON.stringify(answerOne));
-                console.log(answerOne.length);
-                console.log(answerOne);
-                userAnswers.push(answerOne);
+                if (!userAnswers.includes(answerOne)){
+                // localStorage.setItem('answer' + i, JSON.stringify(answerOne));
+                    console.log(answerOne.length);
+                    console.log(answerOne);
+                    userAnswers.push(answerOne);
+                }
             }
         } localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
     }, false);
