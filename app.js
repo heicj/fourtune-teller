@@ -21,6 +21,19 @@ FortuneTell.prototype.randomAnswer = function(){
     }
 };
 
+if(localStorage.userAnswers){
+    for(let i = 0; i < 10; i++){
+        const userAnswers = JSON.parse(localStorage.userAnswers);
+        const formAnswers = userAnswers[i];
+        if(userAnswers[i] !== 'null'){
+            const attribute = document.getElementById('answer' + (i + 1));
+            attribute.setAttribute('placeholder', formAnswers);
+        }
+
+    }
+}
+
+
 const clear = document.getElementById('clearButton');
 if(clear) {
     clear.addEventListener('click', function(e){
@@ -38,11 +51,13 @@ if(form) {
         for(let i = 1; i < 11; i++){
             const answerOne = document.getElementById('answer' + i).value;
             if (answerOne.length > 0){
+                
+// localStorage.setItem('answer' + i, JSON.stringify(answerOne));
                 console.log(answerOne.length);
                 console.log(answerOne);
                 userAnswers.push(answerOne);
             }
-        }
+        } localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
     }, false);
 }
 
