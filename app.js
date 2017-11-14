@@ -28,20 +28,22 @@ FortuneTell.prototype.randomAnswer = function(){
     }
 };
 
-if(localStorage.userAnswers){
-    for(let i = 0; i < userAnswers.length; i++){
-        const userAnswers = JSON.parse(localStorage.userAnswers);
-        const formAnswers = userAnswers[i];
-        const element = document.getElementById('answer' + (i + 1));
-        if(userAnswers[i].length > 0){
-            element.value = userAnswers[i];
-            element.setAttribute('placeholder', formAnswers);
-        }else{
-            element.setAttribute('placeholder', 'Type Your Answer Here');
+const form = document.getElementById('userInput');
+if(form) {
+    if(localStorage.userAnswers){
+        for(let i = 0; i < userAnswers.length; i++){
+            const userAnswers = JSON.parse(localStorage.userAnswers);
+            const formAnswers = userAnswers[i];
+            const element = document.getElementById('answer' + (i + 1));
+            if(formAnswers.length !== 0){
+                element.value = formAnswers;
+                element.setAttribute('placeholder', formAnswers);
+            }else{
+                element.setAttribute('placeholder', 'Type Your Answer Here');
+            }
         }
     }
-}
-
+};
 
 const clear = document.getElementById('clearButton');
 if(clear) {
@@ -52,7 +54,6 @@ if(clear) {
 }
 
 //event handler to add user input as possible answers
-const form = document.getElementById('userInput');
 if(form) {
     form.addEventListener('submit', function(e){
         e.preventDefault();
