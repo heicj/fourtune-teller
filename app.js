@@ -4,7 +4,6 @@ const userAnswers = [];
 
 const eightBall = new FortuneTell('eightBall');
 
-
 function FortuneTell (name){
     this.name = name;
     this.answers = answersArray;
@@ -23,34 +22,36 @@ FortuneTell.prototype.randomAnswer = function(){
 };
 
 const clear = document.getElementById('clearButton');
-clear.addEventListener('click', function(e){
-    e.preventDefault();
-    userAnswers.length = 0;
-});
-
+if(clear) {
+    clear.addEventListener('click', function(e){
+        e.preventDefault();
+        userAnswers.length = 0;
+    }, false);
+}
 
 //event handler to add user input as possible answers
 const form = document.getElementById('userInput');
-form.addEventListener('submit', function(e){
-    e.preventDefault();
-    //take inputs from form push content into user answer array
-    for(let i = 1; i < 11; i++){
-        const answerOne = document.getElementById('answer' + i).value;
-        if (answerOne.length > 0){
-            console.log(answerOne.length);
-            console.log(answerOne);
-            userAnswers.push(answerOne);
+if(form) {
+    form.addEventListener('submit', function(e){
+        e.preventDefault();
+        //take inputs from form push content into user answer array
+        for(let i = 1; i < 11; i++){
+            const answerOne = document.getElementById('answer' + i).value;
+            if (answerOne.length > 0){
+                console.log(answerOne.length);
+                console.log(answerOne);
+                userAnswers.push(answerOne);
+            }
         }
-    }
+    }, false);
 }
 
-
-const eightball = document.getElementById('eightBallImage'); // target HTML element with event listener
-eightBallImage.addEventListener('click', clickHandler); // click handler is a function; event listener takes click handler function as a parameter
+const eightBallImage = document.getElementById('eightBallImage'); // target HTML element with event listener
+if (eightBallImage) {
+    eightBallImage.addEventListener('click', clickHandler, false);
+}// click handler is a function; event listener takes click handler function as a parameter
 
 function clickHandler() {
-
     const answer = document.getElementById('answer'); // target HTML element to which click handler returns answer
-    answer.textContent = randomAnswer(); // calls randomAnswer function, fills target element with random answer
+    answer.textContent = eightBall.randomAnswer();
 }
-
