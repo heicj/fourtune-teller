@@ -87,7 +87,7 @@ function clickHandler() {
 }
 
 const myShakeEvent = new myShakeEvent({
-    threshold: 15,
+    threshold: 3,
     timeout: 1000
 });
 
