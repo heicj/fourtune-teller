@@ -27,6 +27,12 @@ a{
     outline: none;
 }
 /*******************/
+#customBody{
+    /* background image from: https://wallpapercave.com/wp/yynPaPg.jpg */
+    background-image: url('images/wolves.jpg');  
+    background-size: cover;
+    
+}
 #userInput{
     width: 60%;
     margin: 70px auto;
@@ -53,16 +59,20 @@ a{
     font-size: 15pt;
     background-color: #ee88fd;
     text-align: center;
-    color: white;
+    color: black;
+    border: none;
+    opacity: .8;
 }
 .inputBox::placeholder{
     color: black;
     text-align: center;
+    
 }
 
 .inputBox:focus{
-    background-color: #ee88fd;
-    color:white;
+    opacity: 1;
+    /* background-color: black; */
+    color: black;
     font-size: 15pt;
     text-align: center;
 }
