@@ -7,9 +7,19 @@
     <title>Fourtune Teller</title>
     <link rel="stylesheet" type="text/css" href="animation.css">
     <link href="https://fonts.googleapis.com/css?family=Exo:900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+  <div id="nav">
+      <p>Logo Image</p>
+      <nav>
+          <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="custom.html">Customize</a></li>
+          </ul>
+      </nav>
+  </div>
   <div class='cristalBall'>
     <div class='background'>
       <div class='circle'>
@@ -22,10 +32,34 @@
           </div>
         </div>
     <article>
-          <h1 id="headline">Random Answer Shuffle</h1>
+        <div id="main">
+            <p>Enter your yes / no question and click on the eight ball to see your future.</p>
+            <form>
+                <input type="text" name="question" placeholder="Enter your yes / no question here" size="100"/>
+            </form>
+            <div>
+                <!-- <img src="./images/8-ball.jpg" alt="magic 8 ball" id="eightBallImage"/><p>(animation on click)</p> -->
+                <!-- <h2 id="answer">text answer (animation TBD)</h2> -->
+            </div>
+        </div>
+          <h1 id="answer">Your Future</h1>
           <button id="shuffler">shuffle</button>
       </article>
+      <!-- <button><a href="custom.html">Customize Your Future</a></button> -->
+
+      <footer>
+          <p>Disclaimer</p>
+          <nav>
+              <ul>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="custom.html">Customize</a></li>
+              </ul>
+          </nav>
+      </footer>
   <script src="animation.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <script src ='vendor/shake.js'></script>
+
+
 </body>
 </html>
