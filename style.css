@@ -53,6 +53,7 @@ a{
     font-size: 15pt;
     background-color: #ee88fd;
     text-align: center;
+    color: white;
 }
 .inputBox::placeholder{
     color: black;
@@ -61,7 +62,7 @@ a{
 
 .inputBox:focus{
     background-color: #ee88fd;
-    color:black;
+    color:white;
     font-size: 15pt;
     text-align: center;
 }
@@ -84,7 +85,7 @@ a{
     outline: none;
     font-family: monospace;
     font-size: 25pt;
-    color: white;
+    color: black;
     margin-top: 35px;
    
 }
@@ -93,7 +94,7 @@ a{
     box-shadow: -1px 1px 1px;
     transform: translateY(4px);
     outline: none;
-    color: black;
+    color: white;
 
 }
 
@@ -110,14 +111,14 @@ a{
     background-color: #ee88fd;
     outline: none;
     font-family: monospace;
-    color: white;
+    color: black;
 
 }
 #clearButton:active{
     box-shadow: -1px 1px 1px #f3cafc;
     transform: translateY(4px);
     outline: none;
-    color: black;
+    color: white;
 }
 /********************/
 #about-body{
