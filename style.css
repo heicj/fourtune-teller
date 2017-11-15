@@ -1,35 +1,42 @@
 body{
     background-color: black;
-    color: white;   
+    color: white;
+    outline: none;   
 }
 
 a{
     color: #ee88fd;
+    outline: none;
 }
 
 #customHead{
     text-align: center;
     font-size: 4rem;
     font-family: monospace;
+    outline: none;
 }
 
 #custom-links{
     display: flex;
     list-style: none
+    outline: none;
 }
 
 #about-link{
     margin-left: 30px;
+    outline: none;
 }
 /*******************/
 #userInput{
     width: 60%;
     margin: 70px auto;
-    
+    margin-bottom: 0;
+    outline: none;
 }
 
 #formLegend{
     text-align: center;
+    outline: none;
 }
 
 .inputBox{
@@ -37,10 +44,12 @@ a{
     margin: 10px auto;
     width: 80%;
     border-radius: 2px;
+    outline: none;
 }
 
 #formFieldset{
-    border-style: dashed;
+    border-style: none;
+    outline: none;
 }
 
 #submitButton{
@@ -50,18 +59,37 @@ a{
     border-radius: 12px;
     border-style: none;
     height: 40px;
-    box-shadow: 0 9px #999;
+    background-color: #ee88fd;
+    box-shadow: 0 9px #fcefff;
+    outline: none;
+    font-family: monospace;
+    font-size: 15pt;
    
 }
 
-#submitButton:hover{
-    
-    /* background-color: rgb(0, 0, 0);
-    color: rgb(176, 247, 12); */
+#submitButton:active{
+    box-shadow: 0 5px #f3cafc;
+    transform: translateY(4px);
+    outline: none;
+
 }
 
-#submitButton:active{
-    box-shadow: 0 5px #666;
+#clearButton{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 15pt;
+    border-radius: 12px;
+    border-style: none;
+    height: 40px;
+    box-shadow: 0 9px #fcefff;
+    width:28.6%;
+    background-color: #ee88fd;
+    outline: none;
+    font-family: monospace;
+}
+#clearButton:active{
+    box-shadow: 0 5px #f3cafc;
     transform: translateY(4px);
-
+    outline: none;
 }
