@@ -76,9 +76,9 @@ if(form) {
     }, false);
 }
 
-const eightBallImage = document.getElementById('eightBallImage'); // target HTML element with event listener
-if (eightBallImage) {
-    eightBallImage.addEventListener('click', clickHandler, false);
+const shuffler = document.getElementById('shuffler'); // target HTML element with event listener
+if (shuffler) {
+    shuffler.addEventListener('click', clickHandler, false);
 }// click handler is a function; event listener takes click handler function as a parameter
 
 function clickHandler() {

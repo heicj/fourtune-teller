@@ -131,4 +131,5 @@ article{
     top:50%;
     position:relative;
     transform:translateY(-50%);
+    z-index: 10;
 }

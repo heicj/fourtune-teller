@@ -191,11 +191,11 @@ function WordShuffler(holder,opt){
 }
 
 
-let headline = document.getElementById('headline');
+let answer = document.getElementById('answer');
 let text = document.getElementById('text');
 let shuffler = document.getElementById('shuffler');
 
-let headText = new WordShuffler(headline,{
+let headText = new WordShuffler(answer,{
     textColor : '#fff',
     timeOffset : 5, // changes duration of shuffle
     mixCapital : true,
