@@ -86,8 +86,8 @@ function clickHandler() {
     answer.textContent = eightBall.randomAnswer();
 }
 
-const myShakeEvent = new myShakeEvent({
-    threshold: 3,
+const myShakeEvent = new Shake ({
+    threshold: 1,
     timeout: 1000
 });
 
