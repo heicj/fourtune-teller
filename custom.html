@@ -9,36 +9,36 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>Customize Your Future</h1>
-  <!--link to home-->
-  <nav>
-    <ul>
-      <li><a href = "index.html">Home</a></li>
-      <li><a href = "about.html">About Us</a></li>
-    </ul>
-  </nav>
+    <h1 id='customHead'>Customize Your Future</h1>
+    <!--link to home-->
   
   <!--link to about us-->
   
   <!--form: 10 input boxes, submit button, clear form-->
   <form id = 'userInput'>
-    <fieldset>
-      <legend>Create Your Own Answers</legend>
-      <input id = 'answer1' type = 'text' placeholder='Type Your Answer Here'>
-      <input id = 'answer2' type = 'text' placeholder='Type Your Answer Here'>
-      <input id = 'answer3' type = 'text' placeholder='Type Your Answer Here'>
-      <input id = 'answer4' type = 'text' placeholder='Type Your Answer Here'>
-      <input id = 'answer5' type = 'text' placeholder='Type Your Answer Here'>
-      <input id = 'answer6' type = 'text' placeholder='Type Your Answer Here'>
-      <input id = 'answer7' type = 'text' placeholder='Type Your Answer Here'>
-      <input id = 'answer8' type = 'text' placeholder='Type Your Answer Here'>
-      <input id = 'answer9' type = 'text' placeholder='Type Your Answer Here'>
-      <input id = 'answer10' type = 'text' placeholder='Type Your Answer Here'>
+    <fieldset id = 'formFieldset'>
+      <legend id= 'formLegend'>Create Your Own Answers</legend>
+      <input class = 'inputBox' id = 'answer1' type = 'text' placeholder='Type Your Answer Here'>
+      <input class = 'inputBox' id = 'answer2' type = 'text' placeholder='Type Your Answer Here'>
+      <input class = 'inputBox' id = 'answer3' type = 'text' placeholder='Type Your Answer Here'>
+      <input class = 'inputBox' id = 'answer4' type = 'text' placeholder='Type Your Answer Here'>
+      <input class = 'inputBox' id = 'answer5' type = 'text' placeholder='Type Your Answer Here'>
+      <input class = 'inputBox' id = 'answer6' type = 'text' placeholder='Type Your Answer Here'>
+      <input class = 'inputBox' id = 'answer7' type = 'text' placeholder='Type Your Answer Here'>
+      <input class = 'inputBox' id = 'answer8' type = 'text' placeholder='Type Your Answer Here'>
+      <input class = 'inputBox' id = 'answer9' type = 'text' placeholder='Type Your Answer Here'>
+      <input class = 'inputBox' id = 'answer10' type = 'text' placeholder='Type Your Answer Here'>
 
       <button id = 'submitButton' type ='submit'>Submit</button>
     </fieldset>
   </form>
   <button id = 'clearButton' type ='submit'>Clear Answers</button>
+  <nav>
+      <ul id= 'custom-links'>
+        <li><a href = "index.html">Home</a></li>
+        <li style id='about-link'><a href = "about.html">About Us</a></li>
+      </ul>
+    </nav>
   <!-- <script src="custom.js"></script> -->
   <script src="app.js"></script>
 </body>
