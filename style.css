@@ -1,7 +1,30 @@
+body{
+    background-color: black;
+    color: white;   
+}
 
+a{
+    color: #ee88fd;
+}
+
+#customHead{
+    text-align: center;
+    font-size: 4rem;
+    font-family: monospace;
+}
+
+#custom-links{
+    display: flex;
+    list-style: none
+}
+
+#about-link{
+    margin-left: 30px;
+}
+/*******************/
 #userInput{
     width: 60%;
-    margin: 0 auto;
+    margin: 70px auto;
     
 }
 
