@@ -32,11 +32,15 @@ a{
     margin: 70px auto;
     margin-bottom: 0;
     outline: none;
+    margin-top: 3px;
 }
 
 #formLegend{
     text-align: center;
     outline: none;
+    font-family: monospace;
+    font-size: 15pt;
+    margin-bottom: 15px;
 }
 
 .inputBox{
@@ -45,11 +49,27 @@ a{
     width: 80%;
     border-radius: 2px;
     outline: none;
+    font-family: monospace;
+    font-size: 15pt;
+    background-color: #ee88fd;
+    text-align: center;
+}
+.inputBox::placeholder{
+    color: black;
+    text-align: center;
+}
+
+.inputBox:focus{
+    background-color: #ee88fd;
+    color:black;
+    font-size: 15pt;
+    text-align: center;
 }
 
 #formFieldset{
     border-style: none;
     outline: none;
+
 }
 
 #submitButton{
@@ -60,36 +80,40 @@ a{
     border-style: none;
     height: 40px;
     background-color: #ee88fd;
-    box-shadow: 0 9px #fcefff;
+    box-shadow: -5px 5px 5px #fcefff;
     outline: none;
     font-family: monospace;
-    font-size: 15pt;
+    font-size: 25pt;
+    color: white;
+    margin-top: 35px;
    
 }
 
 #submitButton:active{
-    box-shadow: 0 5px #f3cafc;
+    box-shadow: -1px 1px 1px;
     transform: translateY(4px);
     outline: none;
 
 }
 
 #clearButton{
+    box-shadow: -5px 5px 5px #fcefff;
     display: block;
     margin: 0 auto;
     margin-top: 10px;
-    font-size: 15pt;
+    font-size: 25pt;
     border-radius: 12px;
     border-style: none;
     height: 40px;
-    box-shadow: 0 9px #fcefff;
     width:28.6%;
     background-color: #ee88fd;
     outline: none;
     font-family: monospace;
+    color: white;
+
 }
 #clearButton:active{
-    box-shadow: 0 5px #f3cafc;
+    box-shadow: -1px 1px 1px #f3cafc;
     transform: translateY(4px);
     outline: none;
 }
