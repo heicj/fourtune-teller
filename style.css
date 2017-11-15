@@ -18,7 +18,7 @@ a{
 
 #custom-links{
     display: flex;
-    list-style: none
+    list-style: none;
     outline: none;
 }
 
@@ -93,6 +93,7 @@ a{
     box-shadow: -1px 1px 1px;
     transform: translateY(4px);
     outline: none;
+    color: black;
 
 }
 
@@ -116,4 +117,49 @@ a{
     box-shadow: -1px 1px 1px #f3cafc;
     transform: translateY(4px);
     outline: none;
+    color: black;
+}
+/********************/
+#about-body{
+    width: 80%;
+    margin: 0 auto;
+    font-family: monospace;
+}
+
+#aboutHeader{
+    text-align: center;
+    font-size: 4rem;
+    font-family: monospace;
+}
+
+.profiles{
+    position: flex;
+    height: 200px;
+    margin-top: 100px;
+}
+
+img {
+    float: left;
+    width: 200px;
+    height: auto;
+}
+
+#aboutLinksTop{
+    display: flex;
+    list-style: none;
+    outline: none;
+    width: 60%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+#aboutLinksBot{
+    display: flex;
+    list-style: none;
+    outline: none;
+    width: 60%;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
