@@ -183,15 +183,19 @@ img {
 /* INDEX */
 #logo {
     margin-top: -250px;
+    margin-left: 38%;
     width: 250px;
     height: auto;
-    
 } 
 
 #animation-form {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: .75em;
     display: block;
     margin: 10px auto;
     text-align: center;
-    width: 40%;
+    width: 35%;
+    height: 35px;
 
 }
