@@ -8,15 +8,9 @@
     <title>Customize</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-  <h1>Customize Your Future</h1>
-  <!--link to home-->
-  <nav>
-    <ul>
-      <li><a href = "index.html">Home</a></li>
-      <li><a href = "about.html">About Us</a></li>
-    </ul>
-  </nav>
+<body id = 'customBody'>
+    <h1 id='customHead'>Customize Your Future</h1>
+    <!--link to home-->
   
   <!--link to about us-->
   
@@ -35,10 +29,16 @@
       <input class = 'inputBox' id = 'answer9' type = 'text' placeholder='Type Your Answer Here'>
       <input class = 'inputBox' id = 'answer10' type = 'text' placeholder='Type Your Answer Here'>
 
-      <button id = 'submitButton' type ='submit'>Submit</button>
+      <button id = 'submitButton' type ='submit'>SUBMIT</button>
     </fieldset>
   </form>
-  <button id = 'clearButton' type ='submit'>Clear Answers</button>
+  <button id = 'clearButton' type ='submit'>CLEAR ANSWERS</button>
+  <nav>
+      <ul id= 'custom-links'>
+        <li><a href = "index.html">Home</a></li>
+        <li style id='about-link'><a href = "about.html">About Us</a></li>
+      </ul>
+    </nav>
   <!-- <script src="custom.js"></script> -->
   <script src="app.js"></script>
 </body>

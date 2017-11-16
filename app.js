@@ -76,12 +76,36 @@ if(form) {
     }, false);
 }
 
-const eightBallImage = document.getElementById('eightBallImage'); // target HTML element with event listener
-if (eightBallImage) {
-    eightBallImage.addEventListener('click', clickHandler, false);
+// const shuffler = document.getElementById('shuffler'); // target HTML element with event listener
+if (shuffler) {
+    shuffler.addEventListener('click', clickHandler, false);
 }// click handler is a function; event listener takes click handler function as a parameter
 
 function clickHandler() {
     const answer = document.getElementById('answer'); // target HTML element to which click handler returns answer
     answer.textContent = eightBall.randomAnswer();
+    let headText = new WordShuffler(answer,{
+        textColor : '#fff',
+        timeOffset : 5, // changes duration of shuffle
+        mixCapital : true,
+        mixSpecialCharacters : true
+    });
+    headText.restart();
+    buttonText.restart();   
+}
+
+//Shake detection and code
+const myShakeEvent = new Shake ({
+    threshold: 5,
+    timeout: 1000
+});
+
+myShakeEvent.start();
+
+window.addEventListener('shake', shakeHappened, false);
+
+function shakeHappened(){
+    const answer = document.getElementById('answer'); // target HTML element to which click handler returns answer
+    answer.textContent = eightBall.randomAnswer();
+
 }
