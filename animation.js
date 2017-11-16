@@ -204,7 +204,7 @@ let shuffler = document.getElementById('shuffler');
 // });
 
 let buttonText = new WordShuffler(shuffler,{
-    textColor : 'tomato',
+    textColor : 'white',
     timeOffset : 10
 });
 

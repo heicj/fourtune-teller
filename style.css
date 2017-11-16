@@ -179,3 +179,19 @@ img {
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
+/* INDEX */
+#logo {
+    margin-top: -250px;
+    width: 250px;
+    height: auto;
+    
+} 
+
+#animation-form {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    width: 40%;
+
+}
