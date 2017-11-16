@@ -1,3 +1,4 @@
+
 // Crystal Ball source material: https://codepen.io/Pixmy/pen/BwVgVR or https://dribbble.com/shots/2706997-The-Future (primarily CSS)
 // Random Character Shuffle Effect for Text: https://codemyui.com/rainbow-colors-random-character-shuffle-effect-text/
 
@@ -192,15 +193,10 @@ function WordShuffler(holder,opt){
 
 
 let answer = document.getElementById('answer');
-let text = document.getElementById('text');
+// let text = document.getElementById('text');
 let shuffler = document.getElementById('shuffler');
 
-let headText = new WordShuffler(answer,{
-    textColor : '#fff',
-    timeOffset : 5, // changes duration of shuffle
-    mixCapital : true,
-    mixSpecialCharacters : true
-});
+
 
 // var pText = new WordShuffler(text,{
 //   textColor : '#fff',
@@ -213,8 +209,7 @@ let buttonText = new WordShuffler(shuffler,{
 });
 
 
-shuffler.addEventListener('click',function () {
-    headText.restart();
-    pText.restart();
-    buttonText.restart();
-});
+// shuffler.addEventListener('click',function () {
+//     // headText.restart();
+//     // pText.restart();
+// });

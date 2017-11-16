@@ -76,7 +76,7 @@ if(form) {
     }, false);
 }
 
-const shuffler = document.getElementById('shuffler'); // target HTML element with event listener
+// const shuffler = document.getElementById('shuffler'); // target HTML element with event listener
 if (shuffler) {
     shuffler.addEventListener('click', clickHandler, false);
 }// click handler is a function; event listener takes click handler function as a parameter
@@ -84,8 +84,15 @@ if (shuffler) {
 function clickHandler() {
     const answer = document.getElementById('answer'); // target HTML element to which click handler returns answer
     answer.textContent = eightBall.randomAnswer();
+    let headText = new WordShuffler(answer,{
+        textColor : '#fff',
+        timeOffset : 5, // changes duration of shuffle
+        mixCapital : true,
+        mixSpecialCharacters : true
+    });
+    headText.restart();
+    buttonText.restart();   
 }
-
 
 //Shake detection and code
 const myShakeEvent = new Shake ({
