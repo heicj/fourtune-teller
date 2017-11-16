@@ -1,35 +1,52 @@
 body{
     background-color: black;
-    color: white;   
+    color: white;
+    outline: none;   
 }
 
 a{
     color: #ee88fd;
+    outline: none;
 }
 
 #customHead{
     text-align: center;
     font-size: 4rem;
     font-family: monospace;
+    outline: none;
 }
 
 #custom-links{
     display: flex;
-    list-style: none
+    list-style: none;
+    outline: none;
 }
 
 #about-link{
     margin-left: 30px;
+    outline: none;
 }
 /*******************/
+#customBody{
+    /* background image from: https://wallpapercave.com/wp/yynPaPg.jpg */
+    background-image: url('images/wolves.jpg');  
+    background-size: cover;
+    
+}
 #userInput{
     width: 60%;
     margin: 70px auto;
-    
+    margin-bottom: 0;
+    outline: none;
+    margin-top: 3px;
 }
 
 #formLegend{
     text-align: center;
+    outline: none;
+    font-family: monospace;
+    font-size: 15pt;
+    margin-bottom: 15px;
 }
 
 .inputBox{
@@ -37,10 +54,33 @@ a{
     margin: 10px auto;
     width: 80%;
     border-radius: 2px;
+    outline: none;
+    font-family: monospace;
+    font-size: 15pt;
+    background-color: #ee88fd;
+    text-align: center;
+    color: black;
+    border: none;
+    opacity: .8;
+}
+.inputBox::placeholder{
+    color: black;
+    text-align: center;
+    
+}
+
+.inputBox:focus{
+    opacity: 1;
+    /* background-color: black; */
+    color: black;
+    font-size: 15pt;
+    text-align: center;
 }
 
 #formFieldset{
-    border-style: dashed;
+    border-style: none;
+    outline: none;
+
 }
 
 #submitButton{
@@ -50,18 +90,92 @@ a{
     border-radius: 12px;
     border-style: none;
     height: 40px;
-    box-shadow: 0 9px #999;
+    background-color: #ee88fd;
+    box-shadow: -5px 5px 5px #fcefff;
+    outline: none;
+    font-family: monospace;
+    font-size: 25pt;
+    color: black;
+    margin-top: 35px;
    
 }
 
-#submitButton:hover{
-    
-    /* background-color: rgb(0, 0, 0);
-    color: rgb(176, 247, 12); */
+#submitButton:active{
+    box-shadow: -1px 1px 1px;
+    transform: translateY(4px);
+    outline: none;
+    color: white;
+
 }
 
-#submitButton:active{
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+#clearButton{
+    box-shadow: -5px 5px 5px #fcefff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 25pt;
+    border-radius: 12px;
+    border-style: none;
+    height: 40px;
+    width:28.6%;
+    background-color: #ee88fd;
+    outline: none;
+    font-family: monospace;
+    color: black;
 
+}
+#clearButton:active{
+    box-shadow: -1px 1px 1px #f3cafc;
+    transform: translateY(4px);
+    outline: none;
+    color: white;
+}
+/********************/
+
+#about-body{
+    background-image: url('images/moonlight.jpg');
+    background-attachment: fixed;
+    width: 80%;
+    margin: 0 auto;
+    font-family: monospace;
+    font-size: 13pt;
+}
+
+#aboutHeader{
+    text-align: center;
+    font-size: 4rem;
+    font-family: monospace;
+}
+
+.profiles{
+    position: flex;
+    height: 200px;
+    margin-top: 100px;
+}
+
+img {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#aboutLinksTop{
+    display: flex;
+    list-style: none;
+    outline: none;
+    width: 60%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+#aboutLinksBot{
+    display: flex;
+    list-style: none;
+    outline: none;
+    width: 60%;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
