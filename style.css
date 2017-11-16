@@ -131,10 +131,14 @@ a{
     color: white;
 }
 /********************/
+
 #about-body{
+    background-image: url('images/moonlight.jpg');
+    background-attachment: fixed;
     width: 80%;
     margin: 0 auto;
     font-family: monospace;
+    font-size: 13pt;
 }
 
 #aboutHeader{
